@@ -37,13 +37,12 @@
 - Test 4.3: Verify that User cannot access Admin or Brand Admin functionalities.
   
 ### 5. Unauthorized Access Attempts:
-- Test 5.1: Try to access entities with unauthorized roles (e.g., User trying to create a Brand).
-- Test 5.2: Try to modify entities that the user shouldn't have access to (e.g., Brand Admin trying to modify another Brand's Product List).
-- Test 5.3: Attempt to bypass access control mechanisms through vulnerabilities or manipulation.
+- Test 5.1: Try to access entities with unauthorized roles (e.g., User trying to create/update/delete a Brand).
+- Test 5.2: Try to modify entities that the user shouldn't have access to (e.g., Brand Admin trying to modify another Brand's Product List, products).
   
 ### 6. Edge Cases and Error Handling:
-- Test 6.1: Test access control behavior when dealing with invalid roles, non-existent entities, or permission conflicts.
-- Test 6.2: Verify error handling for unauthorized access attempts and unexpected situations.
+- Test 6.1: Test access control behavior when dealing with invalid roles, non-existent brands or permission conflicts.
+- Test 6.2: Verify error handling for unauthorized access attempts and unexpected scenarios's.
   
 ### 7. Concurrent Access:
 - Test 7.1: Simulate concurrent access from multiple users with different roles and test for potential race conditions or data inconsistencies.
@@ -51,7 +50,12 @@
 ### Documentation:
 - Each test case will be documented with:
 - Description of the scenario
+- preconditions
+- Steps to execute the test case
 - Expected outcome
-- Steps to execute the test
-- Pass/Fail criteria
+- actual outcome
+- severity
+
+  ##### I have covered a little bit of test secanrios once enter deeply into the software more secanrio's might arise.
+
   
